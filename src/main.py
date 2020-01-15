@@ -40,33 +40,17 @@ class Student(Person):
 
 
 class God(Worker, Student):
-    def __init__(self, name, age, hours, subject):
-        Person.__init__(self, name, age)
-        Worker.__init__(self, name, age, hours)
-        Student.__init__(self, name, age, subject)
-
-    def run(self):
-        Person.greet(self)
-        Worker.work(self)
-        Student.study(self)
+    pass
 
 
 if __name__ == "__main__":
-    p1 = God("John", 30, 6, "Python")
-    p1.run()
-    print()
-    p2 = Worker("Joe", 40, 8)
-    p2.run()
-    print()
-    p3 = Student("Jane", 25, "Math")
-    p3.run()
-    print()
-    p4 = Person("Peter", 35)
-    p4.run()
-    print()
+    G = God("God", 1000, 0)
+    G.run()
+    # print()
 
-    print("Classes MRO: ")
-    print(Person.__mro__)
-    print(Student.__mro__)
-    print(Worker.__mro__)
-    print(God.__mro__)
+    # print("Classes MRO: ")
+    # print(Person.__mro__)
+    # print(Exception.__mro__)
+    # print(Student.__mro__)
+    # print(Worker.__mro__)
+    # print(God.__mro__)
